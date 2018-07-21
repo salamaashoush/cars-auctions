@@ -1,0 +1,11 @@
+@import "~normalize.css";
+@import "~tailwindcss/utilities";
+@import "~tailwindcss/preflight";
+@import "~tailwindcss/components";
+
+input,select{
+  outline: none;
+}
+input:focus,select:focus{
+  outline: none;
+}

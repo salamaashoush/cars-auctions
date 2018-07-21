@@ -1,0 +1,21 @@
+{
+  "welcome": ["Welcome to Emirates Auction", "مرحبا بك في الامارات للمزادات"],
+  "cars": ["Cars", "سيارات"],
+  "about": ["About", "من نحن"],
+  "home": ["Home", "الرئيسيه"],
+  "faqs": ["FAQs", "اسئله شائعه"],
+  "contact-us": ["Contact us", "اتصل بنا"],
+  "filters": ["Filters", "مرشحات"],
+  "reset": ["Reset", "الغاء"],
+  "condition": ["Condition", "الحاله"],
+  "new": ["New", "جديد"],
+  "used": ["Used", "مستعمل"],
+  "scrap": ["Scrap", "خرده"],
+  "make": ["Make", "الصنع"],
+  "model": ["Model", "الطراز"],
+  "by-year": ["BY YEAR", "بالعام"],
+  "by-bids": ["BY BIDS", "معرفش"],
+  "by-price": ["BY PRICE", "بالسعر"],
+  "by-endtime": ["BY END TIME", "بوقت النهايه"],
+  "vehicles": ["${count} Vehicles", "سياره ${count}"]
+}

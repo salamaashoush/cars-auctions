@@ -1,0 +1,6 @@
+export const REQUEST_CARS = "REQUEST_CARS";
+export const RECEIVE_CARS = "RECEIVE_CARS";
+export const SET_VISABLE_CARS = "SET_VISABLE_CARS";
+export const SET_FILTERS = "SET_FILTERS";
+export const SET_SORT_BY = "SET_SORT_BY";
+export const SET_SEARCH_STRING = "SET_SEARCH_STRING";

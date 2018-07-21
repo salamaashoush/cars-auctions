@@ -1,0 +1,5 @@
+resources/assets/js/legacy/**/*.js
+build-utils/
+*.json
+*.md
+*.css

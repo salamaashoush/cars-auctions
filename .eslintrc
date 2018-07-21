@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "plugin:jsx-a11y/recommended",
+    "plugin:flowtype/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["flowtype", "prettier", "jsx-a11y", "cypress", "import"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "jest": true,
+    "browser": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "globals": {
+    "braintree": true,
+    "$": true,
+    "Intercom": true
+  },
+  "rules": {
+    "no-console": "off",
+    "camelcase": "off",
+    "no-underscore-dangle": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/forbid-prop-types": "off",
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    "react/destructuring-assignment":"off",
+    "no-unused-expressions":"warn",
+    "no-unused-vars":"warn",
+    "lines-between-class-members":"warn",
+    "react/sort-comp":"warn",
+    "react/no-access-state-in-setstate":"warn",
+    "no-use-before-define":"warn",
+    "import/no-cycle":"off",
+    "no-else-return":"warn",
+    "react/require-default-props":"warn",
+    "no-restricted-syntax":"warn",
+    "jsx-a11y/label-has-for":"warn",
+    "react/jsx-no-target-blank":"warn",
+    "jsx-a11y/aria-proptypes":"warn",
+    "react/no-this-in-sfc":"warn",
+    "react/button-has-type":"warn"
+  },
+  "settings":{
+    "import/resolver":{
+      "webpack":{
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}
