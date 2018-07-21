@@ -50,7 +50,6 @@ my-app/
           reducers.js
           selectors.js --> see [https://github.com/reactjs/reselect](https://github.com/reactjs/reselect)
         index.js --> contains the code for async load component and codespliting also injects the reducer
-      SearchResult/ --> same structure as Search
     shared/ --> contains the shared components
     store/ --> redux configurations
       makeRootReducer.js --> helper to make the root reducer for redux and the injectReducer function
