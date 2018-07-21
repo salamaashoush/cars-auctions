@@ -28,7 +28,6 @@
     "connected-react-router": "^4.3.0",
     "date-fns": "^2.0.0-alpha.11",
     "history": "^4.7.2",
-    "normalize.css": "^8.0.0",
     "numeral": "^2.0.6",
     "prop-types": "^15.6.1",
     "ramda": "^0.25.0",
