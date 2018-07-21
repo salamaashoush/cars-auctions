@@ -21,7 +21,7 @@
     "test:junit": "cypress run --reporter junit --reporter-options 'mochaFile=junit-results/my-test-output.xml'"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.1.1",
     "axios": "^0.18.0",
@@ -29,6 +29,7 @@
     "date-fns": "^2.0.0-alpha.11",
     "history": "^4.7.2",
     "normalize.css": "^8.0.0",
+    "numeral": "^2.0.6",
     "prop-types": "^15.6.1",
     "ramda": "^0.25.0",
     "react": "^16.3.2",

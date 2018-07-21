@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import numeral from "numeral";
 import { addSeconds } from "date-fns/esm";
 import Countdown from "react-cntdwn";
 
@@ -27,7 +28,7 @@ class CardLIstItem extends React.Component {
         <div className="flex-1 border border-grey-light bg-white rounded-bflex flex-col justify-between leading-normal">
           <div className="text-black font-bold text-xl my-2 px-4">{name}</div>
           <div className="text-xl mb-2 text-green-light px-4">
-            <span className="font-bold">{price}</span>
+            <span className="font-bold">{numeral(price).format("0,0")}</span>
             <sup className="px-2 text-green-lighter">{currency}</sup>
           </div>
           <ul className="list-reset flex justify-between items-center rounded pin-x pin-b w-full py-3 border-t border-grey-light px-4 text-grey-darker font-semibold flex-1">

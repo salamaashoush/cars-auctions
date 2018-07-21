@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import numeral from "numeral";
 import { addSeconds } from "date-fns/esm";
 import Countdown from "react-cntdwn";
 
@@ -31,7 +32,7 @@ class CarCard extends React.Component {
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{name}</div>
             <div className="text-xl mb-2 text-green-light">
-              <span className="font-bold">{price}</span>
+              <span className="font-bold">{numeral(price).format("0,0")}</span>
               <sup className="px-2 text-green-lighter ">{currency}</sup>
             </div>
           </div>

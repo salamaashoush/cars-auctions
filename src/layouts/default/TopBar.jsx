@@ -1,7 +1,9 @@
 import React from "react";
 import { Translate } from "react-localize-redux";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const TopBar = () => (
+const TopBar = ({ route, lang }) => (
   <Translate>
     {({ translate }) => (
       <div className="w-full flex fixed bg-white shadow-md pl-5  sm:pr-2 md:pr-20 lg:pr-20 z-10 items-stretch">
@@ -80,7 +82,15 @@ const TopBar = () => (
               </a>
             </li>
           </ul>
-          <div className="ext-lg text-grey flex justify-center items-center px-5">
+
+          <a
+            href={`/${lang === "en" ? "ar" : "en"}${route.split(lang)[1]}`}
+            className="bg-transparent block no-underline text-lg text-black hover:text-red px-5 flex justify-center items-center"
+          >
+            {lang === "en" ? "العربيه" : "English"}
+          </a>
+
+          <div className="text-lg text-grey flex justify-center items-center px-5">
             <p className="px-5 hidden md:block">Salama Ashoush</p>
             <img
               className="rounded-full w-10"
@@ -93,4 +103,9 @@ const TopBar = () => (
     )}
   </Translate>
 );
+
+TopBar.propTypes = {
+  route: PropTypes.string.isRequired,
+  lang: PropTypes.string.isRequired
+};
 export default TopBar;

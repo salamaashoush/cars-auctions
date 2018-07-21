@@ -10,7 +10,9 @@ import {
   head,
   tail,
   sortBy,
+  ifElse,
   split,
+  reverse,
   path
 } from "ramda";
 
@@ -56,7 +58,16 @@ export const buildCarProps = curry((locale, carData) => ({
   endDate: carData.AuctionInfo.endDate
 }));
 
-export const sortCars = by => sortBy(path(split(".", by)));
+export const sortCars = curry((by, assc) =>
+  ifElse(
+    () => assc,
+    sortBy(path(split(".", by))),
+    pipe(
+      sortBy(path(split(".", by))),
+      reverse
+    )
+  )
+);
 
 export const searchCars = curry((locale, query, cars) =>
   cars.filter(car =>

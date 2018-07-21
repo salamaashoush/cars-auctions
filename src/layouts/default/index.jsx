@@ -23,9 +23,11 @@ class DefaultLayout extends React.Component {
   }
 
   render() {
-    const { children, activeLanguage, lang } = this.props;
+    const { children, activeLanguage, lang, route } = this.props;
     return activeLanguage ? (
-      <PageLayout lang={lang}>{children}</PageLayout>
+      <PageLayout lang={lang} route={route}>
+        {children}
+      </PageLayout>
     ) : (
       <Preloader />
     );
@@ -34,6 +36,7 @@ class DefaultLayout extends React.Component {
 
 DefaultLayout.propTypes = {
   lang: PropTypes.string.isRequired,
+  route: PropTypes.string.isRequired,
   activeLanguage: PropTypes.object,
   initialize: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([

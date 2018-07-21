@@ -3,9 +3,9 @@
 @import "~tailwindcss/preflight";
 @import "~tailwindcss/components";
 
-input,select{
+input,select,button{
   outline: none;
 }
-input:focus,select:focus{
+input:focus,select:focus,button:focus{
   outline: none;
 }

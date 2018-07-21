@@ -29,7 +29,10 @@ class CarsContainer extends Component {
     cars: PropTypes.array.isRequired,
     pages: PropTypes.number.isRequired,
     setSortByAction: PropTypes.func.isRequired,
-    sortBy: PropTypes.string.isRequired,
+    sortBy: PropTypes.shape({
+      assc: PropTypes.bool,
+      by: PropTypes.string
+    }).isRequired,
     setVisableCars: PropTypes.func.isRequired,
     total: PropTypes.number.isRequired,
     setSearchStringAction: PropTypes.func.isRequired,

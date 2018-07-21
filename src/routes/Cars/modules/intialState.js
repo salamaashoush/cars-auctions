@@ -4,7 +4,7 @@ export default {
   itemsRepositry: [], // should be backend
   visableCars: [],
   filters: [],
-  sortBy: "year",
+  sortBy: { by: "year", assc: true },
   items: [],
   searchString: ""
 };
