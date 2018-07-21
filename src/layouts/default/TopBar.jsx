@@ -1,6 +1,5 @@
 import React from "react";
 import { Translate } from "react-localize-redux";
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const TopBar = ({ route, lang }) => (

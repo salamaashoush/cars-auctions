@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Loadable from "react-loadable";
 import carsRoute from "Routes/Cars";
 import ErrorBoundry from "Shared/Errors/ErrorBoundry";
